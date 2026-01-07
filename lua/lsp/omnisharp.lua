@@ -1,5 +1,5 @@
 return {
-	cmd = { "csharp_ls" },
+	cmd = { "omnisharp" },
 	filetypes = { "cs" },
 	root_markers = { ".sln" },
 }

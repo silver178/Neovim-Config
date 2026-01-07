@@ -6,7 +6,7 @@ return {
 	config = function()
 		local config = require("nvim-treesitter.configs")
 		config.setup = {
-			ensure_installed = { "c", "cpp", "lua", "glsl", "cmake", "zig" },
+			ensure_installed = { "c", "cpp", "lua", "glsl", "cmake", "zig", "c_sharp" },
 			highlight = { enable = true },
 			indent = { enable = true },
 		}
