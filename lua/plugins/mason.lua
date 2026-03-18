@@ -21,7 +21,7 @@ return {
 			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup({})
 			lspconfig.omnisharp.setup({})
-			lspconfig.clangd.setup()
+			lspconfig.clangd.setup({ cmd = "clangd" })
 		end,
 	},
 }
