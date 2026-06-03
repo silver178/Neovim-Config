@@ -1,8 +1,7 @@
 --local clangd = require("lsp.clangd")
 return {
-	"mason.nvim",
 	{
-		"mason-org/mason-lspconfig.nvim",
+		"mason-org/mason.nvim",
 		config = function()
 			require("mason").setup()
 		end,
@@ -11,7 +10,7 @@ return {
 		"mason-org/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { ensure_installed = "lua_ls", "clangd", "omnisharp" },
+				ensure_installed = { "lua_ls", "clangd", "omnisharp" },
 			})
 		end,
 	},
