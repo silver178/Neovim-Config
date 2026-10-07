@@ -10,7 +10,7 @@ return {
 		"mason-org/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "clangd", "omnisharp", "haxe_language_server" },
+				ensure_installed = { "lua_ls", "clangd", "omnisharp", "haxe_language_server", "qmlls" },
 			})
 		end,
 	},
@@ -22,6 +22,7 @@ return {
 			lspconfig.omnisharp.setup({})
 			lspconfig.clangd.setup({ cmd = "clangd" })
 			lspconfig.haxe_language_server.setup({})
+			lspconfig.qmlls.setup({})
 		end,
 	},
 }
